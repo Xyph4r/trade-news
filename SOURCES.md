@@ -27,6 +27,23 @@ use tier 2 for reporting and context, use tier 3 for prices and calendars.
 | Other emerging markets | valorinternational.globo.com (Brazil), thenationalnews.com and arabnews.com (Gulf), africa.businessinsider.com |
 | Commodities and energy | spglobal.com/commodityinsights, mining.com, oilprice.com (opinion pieces with care) |
 
+## Market data (for the tables)
+
+Run `python3 scripts/market_data.py` first (add `--date YYYY-MM-DD` for a past day,
+`--week YYYY-MM-DD` with a Friday for the weekly table). It reads these free, keyless sources:
+
+| Data | Source |
+|---|---|
+| Indices, futures, FX, VIX | Yahoo Finance chart data (query1.finance.yahoo.com) |
+| EUR/USD reference rate | ECB euro foreign exchange reference rates (ecb.europa.eu/stats/eurofxref) |
+| US 10y Treasury yield | FRED series DGS10 (fred.stlouisfed.org) |
+| Bund 10y yield | Deutsche Bundesbank time series BBSIS…R10XX (api.statistiken.bundesbank.de) |
+
+MSCI indices are not freely available, so iShares ETFs (URTH, EEM) stand in and are
+labelled as such. For anything the script marks n/a, try the manual fallbacks:
+boerse-frankfurt.de (DAX), stoxx.com (Euro Stoxx 50), bundesbank.de (Bund yields),
+ecb.europa.eu (FX), finanzen.net and onvista.de (all markets).
+
 ## Tier 3: Prices, calendars, overviews
 
 - Prices and quotes: finanzen.net, onvista.de, boerse-frankfurt.de, investing.com,

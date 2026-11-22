@@ -42,6 +42,12 @@ Read `SOURCES.md` before you start. The templates live in `templates/`.
 
 ## 2. Research
 
+**Market tables:** run `python3 scripts/market_data.py` (or `--week <last Friday>` for
+the weekly recap) and use its output for the table. It gives the close, the change,
+the date of the close and the source for each market. Use its figures as they are;
+for anything it marks n/a, try the manual fallbacks in `SOURCES.md`, otherwise
+keep n/a.
+
 Use `WebSearch` to find the news and `WebFetch` to read free sources. Paywalled sites
 (Bloomberg, FT, WSJ, Handelsblatt+) can be used through their headlines and the
 snippets that search returns. Do not try to get around a paywall.
