@@ -13,12 +13,18 @@ markdown: kramdown
 kramdown:
   parse_block_html: false
 
+collections:
+  learn:
+    output: true
+    permalink: /learn/:name/
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
 header_pages:
   - weekly.md
+  - learn.md
   - about.md
 
 exclude:

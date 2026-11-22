@@ -20,3 +20,12 @@ html[data-lang="de"] .lang-opt[data-lang="de"] { opacity: 1; font-weight: bold; 
 
 .post-content table { display: block; overflow-x: auto; }
 .post-nav { margin-top: 2em; }
+
+/* Learn section */
+.learn-list { list-style: none; margin-left: 0; }
+.learn-list li { margin-bottom: 0.8em; }
+.learn-category { margin-top: 1.5em; }
+.concept-summary { font-size: 1.1em; color: #555; }
+.concept-related { margin-top: 2em; padding-top: 1em; border-top: 1px solid #e8e8e8; }
+.concept-related h2 { font-size: 1.1em; }
+.concept-note { margin-top: 2em; font-size: 0.85em; color: #828282; }

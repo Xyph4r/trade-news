@@ -1,0 +1,19 @@
+categories:
+  - id: site
+    en: "This site"
+    de: "Diese Seite"
+  - id: markets
+    en: "Stock markets"
+    de: "Aktienmärkte"
+  - id: rates
+    en: "Interest rates and central banks"
+    de: "Zinsen und Notenbanken"
+  - id: economy
+    en: "Economic data"
+    de: "Konjunkturdaten"
+  - id: fx-commodities
+    en: "Currencies and commodities"
+    de: "Währungen und Rohstoffe"
+  - id: investing
+    en: "Funds and investing"
+    de: "Fonds und Geldanlage"

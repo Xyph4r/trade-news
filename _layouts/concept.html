@@ -1,0 +1,32 @@
+---
+layout: default
+---
+{%- assign cat = site.data.learn_categories.categories | where: "id", page.category | first -%}
+<article class="post concept">
+  <p class="post-meta"><a href="{{ "/learn/" | relative_url }}">{% include t.html en="Learn" de="Lernen" %}</a> · {% include t.html en=cat.en de=cat.de %}</p>
+  <header class="post-header">
+    <h1 class="post-title">{% include t.html en=page.title de=page.title_de %}</h1>
+    <p class="concept-summary">{% include t.html en=page.summary de=page.summary_de %}</p>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  {%- if page.related and page.related.size > 0 %}
+  <section class="concept-related">
+    <h2>{% include t.html en="Related concepts" de="Verwandte Begriffe" %}</h2>
+    <ul>
+    {%- for slug in page.related -%}
+      {%- assign rel_url = "/learn/" | append: slug | append: "/" -%}
+      {%- assign rel = site.learn | where: "url", rel_url | first -%}
+      {%- if rel %}
+      <li><a href="{{ rel.url | relative_url }}">{% include t.html en=rel.title de=rel.title_de %}</a></li>
+      {%- endif -%}
+    {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+
+  <p class="concept-note">{% include t.html en="Explanations are simplified and are not investment advice." de="Die Erklärungen sind vereinfacht und keine Anlageberatung." %}</p>
+</article>

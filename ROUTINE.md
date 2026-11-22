@@ -124,7 +124,12 @@ These rules matter more than having a complete page.
    same sections, same numbers, same links, same order. Do not research again and
    do not add or drop stories. Use German number formats in the German block
    (1.234,5 and 0,8 %), and keep tickers and index names as they are.
-5. Fill every section or write "Nothing material." / "Nichts Wesentliches."
+5. **Link concepts to the Learn section.** The first time a post mentions a concept
+   that has a page in `_learn/` (for example basis points, the yield curve, PMI, ifo,
+   real interest rates, futures), link it with a relative link such as
+   `[yield curve](/learn/yield-curve/)`, in both language blocks. Link each concept
+   at most once per language block. Do not create or edit pages in `_learn/`.
+6. Fill every section or write "Nothing material." / "Nichts Wesentliches."
    Delete every HTML comment from the template.
 
 Length (English block): daily 600 to 900 words, weekend 400 to 600 words,

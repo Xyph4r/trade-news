@@ -51,7 +51,11 @@
       "Bash(git push --delete:*)",
       "Bash(git reset --hard:*)",
       "Bash(git config:*)",
-      "Bash(rm -rf:*)"
+      "Bash(rm -rf:*)",
+      "Edit(_learn/**)",
+      "Write(_learn/**)",
+      "Edit(_data/**)",
+      "Write(_data/**)"
     ]
   }
 }
