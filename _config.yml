@@ -1,0 +1,20 @@
+title: Daily Markets Briefing
+description: >-
+  A daily look at global markets and finance news, with a longer recap every Monday.
+  Written automatically by Claude from linked sources. Not investment advice.
+theme: minima
+timezone: Europe/Berlin
+permalink: /:categories/:year/:month/:day/:title/
+show_excerpts: true
+
+header_pages:
+  - weekly.md
+  - about.md
+
+exclude:
+  - ROUTINE.md
+  - SOURCES.md
+  - CLAUDE.md
+  - README.md
+  - templates/
+  - .claude/
