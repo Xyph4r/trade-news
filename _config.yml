@@ -4,6 +4,8 @@ description: >-
   A daily look at global markets and finance news, with a longer recap every Monday.
   Written automatically by Claude from linked sources. Not investment advice.
 theme: minima
+url: https://trade.4x-labs.com
+baseurl: ""
 timezone: Europe/Berlin
 permalink: /:categories/:year/:month/:day/:title/
 show_excerpts: false
