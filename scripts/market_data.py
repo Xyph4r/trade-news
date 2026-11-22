@@ -21,6 +21,8 @@ import xml.etree.ElementTree as ET
 
 UA = {"User-Agent": "Mozilla/5.0 (compatible; markets-briefing/1.0)"}
 TIMEOUT = 20
+# Futures (Brent, WTI, gold, copper) are continuous front-month contracts; on a contract
+# roll day the change can differ from news reports. Say so in the post when they disagree.
 
 # (label, kind, id). Yahoo chart symbols; MSCI indices are not free, so iShares ETFs stand in.
 MARKETS = [
@@ -53,8 +55,8 @@ MARKETS = [
 SOURCE_NAME = {"yahoo": "Yahoo Finance", "ecb": "ECB", "fred": "FRED", "bbk": "Bundesbank"}
 
 
-def get(url):
-    req = urllib.request.Request(url, headers=UA)
+def get(url, headers=None):
+    req = urllib.request.Request(url, headers=headers or UA)
     with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
         return r.read().decode("utf-8", "replace")
 
@@ -84,7 +86,8 @@ def series_ecb(cur):
 
 
 def series_fred(sid):
-    text = get(f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={sid}")
+    # FRED stalls on browser-like User-Agents but answers plain command-line clients.
+    text = get(f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={sid}", {"User-Agent": "curl/8.5.0"})
     out = []
     for row in list(csv.reader(io.StringIO(text)))[1:]:
         try:
