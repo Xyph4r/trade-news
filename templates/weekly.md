@@ -1,10 +1,14 @@
 ---
 layout: post
 title: "Weekly recap: week NN, DD to DD MONTH YYYY"
-date: YYYY-MM-DD 07:00:00 +0100
+date: YYYY-MM-DD 06:40:00 +0100
+title_de: "Wochenrückblick: KW NN, TT. bis TT. MONAT JJJJ"
+summary: "One sentence on the most important story."
+summary_de: "Ein Satz zur wichtigsten Meldung."
 categories: [weekly]
 ---
 
+<div class="lang-en" lang="en" markdown="1">
 <!-- Covers the previous Monday to Friday plus the weekend. -->
 
 **The week in three sentences:** ...
@@ -14,7 +18,7 @@ categories: [weekly]
 <!-- Change from the previous Friday close to this Friday close. Write n/a when you cannot verify it. -->
 
 | Market | Friday close | Week | Year to date |
-|---|---:|---:|---:|
+|---|---|---|---|
 | S&P 500 | | | |
 | Nasdaq 100 | | | |
 | Euro Stoxx 50 | | | |
@@ -48,7 +52,7 @@ categories: [weekly]
 <!-- Decisions and key releases, with the result against expectations. -->
 
 | Release | Actual | Expected | Previous | Reaction |
-|---|---:|---:|---:|---|
+|---|---|---|---|---|
 | | | | | |
 
 ## Regions
@@ -84,3 +88,42 @@ categories: [weekly]
 ---
 
 *Not investment advice. Written automatically by Claude from the linked sources; figures may be delayed.*
+</div>
+
+<div class="lang-de" lang="de" markdown="1">
+<!-- German version: the same sections, numbers and links as the English version, translated (not re-researched). Keep tables identical except for labels. -->
+
+**Die Woche in drei Sätzen:** ...
+
+## Wochenperformance
+
+...
+
+## Die großen Themen der Woche
+
+...
+
+## Notenbanken und Konjunkturdaten
+
+...
+
+## Regionen
+
+...
+
+## Watchlist-Themen
+
+...
+
+## Längerfristige Trends
+
+...
+
+## Die kommende Woche
+
+...
+
+---
+
+*Keine Anlageberatung. Automatisch von Claude aus den verlinkten Quellen erstellt; Zahlen können verzögert sein.*
+</div>

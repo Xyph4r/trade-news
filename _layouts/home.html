@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<div class="home">
+  {{ content }}
+  {%- if site.posts.size > 0 -%}
+    {% include post-list.html posts=site.posts limit=30 %}
+    <p class="rss-subscribe"><a href="{{ "/feed.xml" | relative_url }}">RSS</a></p>
+  {%- else -%}
+    <p>{% include t.html en="No briefing yet. The first one appears tomorrow morning." de="Noch kein Briefing. Das erste erscheint morgen früh." %}</p>
+  {%- endif -%}
+</div>

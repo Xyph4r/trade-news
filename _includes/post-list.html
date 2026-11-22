@@ -1,0 +1,9 @@
+<ul class="post-list">
+  {%- for post in include.posts limit: include.limit -%}
+  <li>
+    <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}{% for c in post.categories %} · {{ c }}{% endfor %}</span>
+    <h3><a class="post-link" href="{{ post.url | relative_url }}">{% include t.html en=post.title de=post.title_de %}</a></h3>
+    {%- if post.summary -%}<p>{% include t.html en=post.summary de=post.summary_de %}</p>{%- endif -%}
+  </li>
+  {%- endfor -%}
+</ul>

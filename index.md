@@ -1,6 +1,5 @@
 ---
 layout: home
-title: Latest
 ---
 
-The latest daily briefings and weekly recaps, newest first.
+<p>{% include t.html en="Global markets every morning, a weekly recap every Monday." de="Jeden Morgen die globalen Märkte, jeden Montag ein Wochenrückblick." %}</p>

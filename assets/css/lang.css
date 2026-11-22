@@ -1,0 +1,22 @@
+/* Language toggle: English is the default and the no-JavaScript fallback. */
+html:not([data-lang="de"]) .lang-de { display: none !important; }
+html[data-lang="de"] .lang-en { display: none !important; }
+
+.lang-toggle {
+  margin-left: 20px;
+  padding: 0 8px;
+  line-height: 1.6;
+  vertical-align: middle;
+  border: 1px solid #828282;
+  border-radius: 4px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+.lang-opt { opacity: 0.5; }
+html:not([data-lang="de"]) .lang-opt[data-lang="en"],
+html[data-lang="de"] .lang-opt[data-lang="de"] { opacity: 1; font-weight: bold; }
+
+.post-content table { display: block; overflow-x: auto; }
+.post-nav { margin-top: 2em; }

@@ -1,10 +1,14 @@
 ---
 layout: post
 title: "Daily briefing: DAY, DD MONTH YYYY"
-date: YYYY-MM-DD 07:00:00 +0100
+date: YYYY-MM-DD 06:40:00 +0100
+title_de: "Tagesbriefing: TAG, TT. MONAT JJJJ"
+summary: "One sentence on the most important story."
+summary_de: "Ein Satz zur wichtigsten Meldung."
 categories: [daily]
 ---
 
+<div class="lang-en" lang="en" markdown="1">
 <!-- One or two sentences: the single most important thing for markets today. -->
 **In one sentence:** ...
 
@@ -13,7 +17,7 @@ categories: [daily]
 <!-- Every figure needs a source and a time. Write n/a when you cannot verify it. -->
 
 | Market | Level | Change | As of |
-|---|---:|---:|---|
+|---|---|---|---|
 | S&P 500 | | | |
 | Nasdaq 100 | | | |
 | Euro Stoxx 50 | | | |
@@ -68,3 +72,34 @@ categories: [daily]
 ---
 
 *Not investment advice. Written automatically by Claude from the linked sources; figures may be delayed.*
+</div>
+
+<div class="lang-de" lang="de" markdown="1">
+<!-- German version: the same sections, numbers and links as the English version, translated (not re-researched). Keep tables identical except for labels. -->
+
+**In einem Satz:** ...
+
+## Märkte auf einen Blick
+
+...
+
+## Die wichtigsten Meldungen
+
+...
+
+## Rund um die Welt
+
+...
+
+## Watchlist-Themen
+
+...
+
+## Termine heute
+
+...
+
+---
+
+*Keine Anlageberatung. Automatisch von Claude aus den verlinkten Quellen erstellt; Zahlen können verzögert sein.*
+</div>

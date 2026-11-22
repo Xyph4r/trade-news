@@ -1,0 +1,2 @@
+{%- comment -%}Bilingual text: {% include t.html en="..." de="..." %}. German falls back to English.{%- endcomment -%}
+<span class="lang-en" lang="en">{{ include.en | escape }}</span><span class="lang-de" lang="de">{{ include.de | default: include.en | escape }}</span>

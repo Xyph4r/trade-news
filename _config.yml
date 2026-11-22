@@ -1,11 +1,19 @@
 title: Daily Markets Briefing
+title_de: Tägliches Markt-Briefing
 description: >-
   A daily look at global markets and finance news, with a longer recap every Monday.
   Written automatically by Claude from linked sources. Not investment advice.
 theme: minima
 timezone: Europe/Berlin
 permalink: /:categories/:year/:month/:day/:title/
-show_excerpts: true
+show_excerpts: false
+markdown: kramdown
+kramdown:
+  parse_block_html: false
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
 
 header_pages:
   - weekly.md
@@ -14,7 +22,10 @@ header_pages:
 exclude:
   - ROUTINE.md
   - SOURCES.md
+  - SECURITY.md
   - CLAUDE.md
   - README.md
   - templates/
+  - scripts/
   - .claude/
+  - .github/

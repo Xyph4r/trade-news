@@ -1,0 +1,26 @@
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
+vendor/
+
+# Secrets and local settings: never commit
+.env
+.env.*
+*.pem
+*.key
+.claude/settings.local.json
+private/
+portfolio*.yml
+portfolio*.yaml
+
+# OS and editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Python
+__pycache__/

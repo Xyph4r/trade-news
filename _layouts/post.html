@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<article class="post h-entry">
+  <header class="post-header">
+    <h1 class="post-title p-name">{% include t.html en=page.title de=page.title_de %}</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
+      {%- for c in page.categories %} · <span class="post-kind">{{ c }}</span>{% endfor %}
+    </p>
+  </header>
+
+  <div class="post-content e-content">
+    {{ content }}
+  </div>
+
+  <p class="post-nav">
+    {%- if page.previous %}<a href="{{ page.previous.url | relative_url }}">&larr; {% include t.html en="Previous" de="Vorherige" %}</a>{% endif -%}
+    {%- if page.previous and page.next %} · {% endif -%}
+    {%- if page.next %}<a href="{{ page.next.url | relative_url }}">{% include t.html en="Next" de="Nächste" %} &rarr;</a>{% endif -%}
+  </p>
+</article>
